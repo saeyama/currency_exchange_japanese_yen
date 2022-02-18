@@ -1,6 +1,6 @@
 {
   "name": "currency_exchange_japanese_yen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "convert Japanese Yen to your desired currency",
   "main": "index.js",
   "bin": {
