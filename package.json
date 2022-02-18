@@ -1,0 +1,34 @@
+{
+  "name": "currency_exchange_japanese_yen",
+  "version": "1.0.0",
+  "description": "convert Japanese Yen to your desired currency",
+  "main": "index.js",
+  "bin": {
+    "currency_exchange_japanese_yen": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saeyama/currency_exchange_japanese_yen.git"
+  },
+  "keywords": [
+    "currency",
+    "exchange",
+    "japanese",
+    "JPN",
+    "yen"
+  ],
+  "author": "saeyama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saeyama/currency_exchange_japanese_yen/issues"
+  },
+  "homepage": "https://github.com/saeyama/currency_exchange_japanese_yen#readme",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "enquirer": "^2.3.6",
+    "node-emoji": "^1.11.0"
+  }
+}
