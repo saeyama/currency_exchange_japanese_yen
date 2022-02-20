@@ -3,7 +3,7 @@
 日本円を希望の通貨に変換します。  
 為替レートは1日1回更新されます。
 
-convert Japanese Yen to your desired currency
+convert Japanese Yen to your desired currency  
 exchange rates are updated once a day
 
 # install
