@@ -28,17 +28,17 @@ function selectConversionRates (rates, priceJpy) {
 
 async function inputJpy () {
   await Enquirer
-  const inputJpyInteger = await
+  const inputValue = await
   {
     type: 'input',
-    name: 'integer',
+    name: 'value',
     message: '換算したい日本円を半角数字でカンマなしで入力して下さい\nPlease enter the Japanese Yen you want to convert'
   }
-  const inputpriceJpy = await Enquirer.prompt(inputJpyInteger)
-  return Number(inputpriceJpy.integer)
+  const jpy = await Enquirer.prompt(inputValue)
+  return Number(jpy.value)
 }
 
-async function resultSelectConversionAmount () {
+async function selectConversionAmount () {
   await Enquirer
   const priceJpy = await inputJpy()
 
@@ -56,4 +56,4 @@ async function resultSelectConversionAmount () {
   console.log(`${priceJpy.toLocaleString()}円の換算金額 : ${currencyDatas[select.currencyName]}\nコロナが終わったら良い旅を${emoji.get('sparkles')}\nHave a nice trip when the covid19 is over ${emoji.get('small_airplane')}`)
 }
 
-resultSelectConversionAmount()
+selectConversionAmount()
